@@ -1,16 +1,49 @@
 1. How to change the remote url of the repository
-   git remote -v
-   git remote set-url origin https://github.com/user/repo2.git
-   git remote -v
+git remote -v
+git remote set-url origin https://github.com/user/repo2.git
+git remote -v
+
 2.create Branch
-   git branch <branch_name>  =>> create new branch
-   git checkout <branch_name> =>> checkout into branch
+git branch new branch <branch_name >= >>create
+git checkout into branch <branch_name >= >>checkout
+
 3.Push
-   git push -u origin main
+git push -u origin main
+git push --set-upstream origin branch_name
+
 4.Check status
-   git status -a =>> check all branches
+git status -a = all branches >>check
+
 5.Git Clone
-   git clone url
+git clone url
+
 6.Stash
-    git stash
-    git stash pop
+git stash
+git stash pop
+git stash show -p
+git stash pop = git stash apply + git stash drop
+git stash pop - from the stash list >remove
+git stash apply - it in the stash list >keep
+
+7.Pull
+git pull 'remote_name' 'branch_name'
+git pull is like a git fetch + git merge.
+git pull is like running git fetch then git merge
+git pull --rebase is like git fetch then git rebase
+"git fetch ---- only fetch changes (changes not reflected on current branch)
+     after git fetch we need to use git merge for reflect changes on current branch"
+"git rebase used to merge private branches and git merge used to merge public branches "
+
+8.Cherry Pick
+cherry pick is used to get particular changes from another branch with the help of id
+git checkout branch
+git lo ===find id
+git checkout branch
+git cherry-pick id
+git cherry-pick id -n === changes without commit >bring
+git commit -m 'msg'
+
+9.Git Log
+git log
+git log -p -2 ===>> for brief
+git log --stat ====>>> for short commits
