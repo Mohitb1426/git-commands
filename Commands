@@ -38,6 +38,7 @@ git pull --rebase is like git fetch then git rebase
 cherry pick is used to get particular changes from another branch with the help of id
 git checkout branch
 git lo ===find id
+git reflog
 git checkout branch
 git cherry-pick id
 git cherry-pick id -n === changes without commit >bring
@@ -45,5 +46,22 @@ git commit -m 'msg'
 
 9.Git Log
 git log
+git reflog
 git log -p -2 ===>> for brief
 git log --stat ====>>> for short commits
+
+10.Staging
+git diff == compare working dir to stagged 
+git diff --staged == compare working to last commit
+
+11.Undo unstaged local changes
+git checkout 
+git stash
+git reset ==== To discard local changes to all files, permanently:
+
+12.Undo staged local changes
+git restore --staged <file> ====To unstage the file but keep your changes:
+git reset --hard ==== To discard everything permanently:
+
+13.revert committed changes
+git revert id
