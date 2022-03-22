@@ -1,0 +1,16 @@
+1. How to change the remote url of the repository
+   git remote -v
+   git remote set-url origin https://github.com/user/repo2.git
+   git remote -v
+2.create Branch
+   git branch <branch_name>  =>> create new branch
+   git checkout <branch_name> =>> checkout into branch
+3.Push
+   git push -u origin main
+4.Check status
+   git status -a =>> check all branches
+5.Git Clone
+   git clone url
+6.Stash
+    git stash
+    git stash pop
