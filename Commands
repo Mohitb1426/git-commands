@@ -27,6 +27,7 @@ git stash apply - it in the stash list >keep
 
 7.Pull
 git pull 'remote_name' 'branch_name'
+git push -f origin master
 git pull is like a git fetch + git merge.
 git pull is like running git fetch then git merge
 git pull --rebase is like git fetch then git rebase
@@ -65,3 +66,7 @@ git reset --hard ==== To discard everything permanently:
 
 13.revert committed changes
 git revert id
+
+14.How to add and commit single file
+git add filename
+git commit -m "single file" secondfile.js === secondfile.js is file name
