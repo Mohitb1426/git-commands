@@ -4,7 +4,7 @@
  Commands
  git tag <tag-name>  ==== create tag
  git tag  === check tag list
- git tag -a v1.0.0 "msg" === created Annotated Tags
+ $ git tag -a <tag_name> -m "message" === created Annotated Tags
 "Annotated tags store extra meta data such as: the tagger name, email, and date. 
 This is important data for a public release. Lightweight tags are essentially 'bookmarks' to a commit, 
 they are just a name and a pointer to a commit, useful for creating quick links to relevant commits."
