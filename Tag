@@ -1,0 +1,19 @@
+1.Tag Created for any release
+2.also created for history for versions
+
+ Commands
+ git tag <tag-name>  ==== create tag
+ git tag  === check tag list
+ git tag -a v1.0.0 "msg" === created Annotated Tags
+"Annotated tags store extra meta data such as: the tagger name, email, and date. 
+This is important data for a public release. Lightweight tags are essentially 'bookmarks' to a commit, 
+they are just a name and a pointer to a commit, useful for creating quick links to relevant commits."
+
+git show v.0.0 === it shows detail of particular tag
+git tag -l "v1.*" === it shows similar tags
+git push origin v1.0.0
+git push --tags
+git tag -d v1.0.0 === it use to delete tag
+git tag -delete v1.0.0  === it use to delete tag
+git log === it shows details and check sum number
+git checkout -b <branch> <tag>
